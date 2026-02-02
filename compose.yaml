@@ -3,4 +3,8 @@ include:
   - services/pihole.yaml
   - services/syncthing.yaml
   - services/jellyfin.yaml
+  - network/cloudflared.yaml
 
+secrets:
+  cloudflared_token:
+    file: secrets/cloudflared_token
