@@ -1,0 +1,10 @@
+name: Radicale
+services:
+    radicale:
+        container_name: radicale
+        image: ghcr.io/kozea/radicale:stable
+        ports:
+        - 5232:5232
+        volumes:
+          - ../volumes/radicale/config:/etc/radicale
+          - ../volumes/radicale/data:/var/lib/radicale

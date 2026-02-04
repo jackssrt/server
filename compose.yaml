@@ -1,8 +1,8 @@
 include:
-  #- services/radicale.yaml
   - services/pihole.yaml
   - services/syncthing.yaml
   - services/jellyfin.yaml
+  - services/radicale.yaml
   - network/cloudflared.yaml
 
 secrets:
