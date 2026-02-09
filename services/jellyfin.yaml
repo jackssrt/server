@@ -8,11 +8,11 @@ services:
       - 8002:8096/tcp
       - 7359:7359/udp
     volumes:
-      - ../volumes/config:/config
-      - ../volumes/cache:/cache
+      - ../volumes/jellyfin/config:/config
+      - ../volumes/jellyfin/cache:/cache
       - type: bind
-        source: ../volumes/sync
-        target: /media
+        source: ../volumes/syncthing/Music
+        target: /media/Music
       # Optional - extra fonts to be used during transcoding with subtitle burn-in
       #- type: bind
         #source: /path/to/fonts
