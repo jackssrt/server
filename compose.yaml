@@ -3,6 +3,7 @@ include:
   - services/syncthing.yaml
   - services/jellyfin.yaml
   - services/radicale.yaml
+  - services/searxng.yaml
   - network/cloudflared.yaml
 
 secrets:
