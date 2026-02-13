@@ -4,6 +4,6 @@ services:
         ports:
             - 8888:8080
         volumes:
-            - ./volumes/searxng/config/:/etc/searxng/
-            - ./volumes/searxng/data/:/var/cache/searxng/
+            - ../volumes/searxng/config/:/etc/searxng/
+            - ../volumes/searxng/data/:/var/cache/searxng/
         image: docker.io/searxng/searxng:latest
