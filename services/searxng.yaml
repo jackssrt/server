@@ -3,6 +3,7 @@ services:
         container_name: searxng
         ports:
             - 8888:8080
+        restart: unless-stopped
         volumes:
             - ../volumes/searxng/config/:/etc/searxng/
             - ../volumes/searxng/data/:/var/cache/searxng/
