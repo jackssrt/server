@@ -13,6 +13,12 @@ services:
       - type: bind
         source: ../volumes/syncthing/Music
         target: /media/Music
+      - type: bind
+        source: ../volumes/jellyfin/Anime
+        target: /media/Anime
+      - type: bind
+        source: ../volumes/jellyfin/Series
+        target: /media/Series
       # Optional - extra fonts to be used during transcoding with subtitle burn-in
       #- type: bind
         #source: /path/to/fonts
