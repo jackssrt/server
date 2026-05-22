@@ -1,0 +1,13 @@
+services:
+  mpd:
+    image: tobi312/rpi-mpd:alpine
+    container_name: radio
+    restart: unless-stopped
+    ports:
+      - 6600:6600  # MPD Client
+      - 8000:8000  # Stream
+    volumes:
+      - ./../volumes/syncthing/Music:/var/lib/mpd/music:ro
+      - ./../volumes/radio/playlists:/var/lib/mpd/playlists:rw
+      - ./../volumes/radio/data:/var/lib/mpd/data:rw
+      - ./../volumes/radio/mpd.conf:/etc/mpd.conf:rw

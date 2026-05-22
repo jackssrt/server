@@ -4,6 +4,7 @@ include:
   - services/jellyfin.yaml
   - services/radicale.yaml
   - services/zipline.yaml
+  - services/radio.yaml
   - network/cloudflared.yaml
 
 secrets:
