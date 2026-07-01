@@ -5,7 +5,7 @@ services:
     # Optional - specify the uid and gid you would like Jellyfin to use instead of root
     #user: uid:gid
     ports:
-      - 8002:8096/tcp
+      - 8096:8096/tcp
       - 7359:7359/udp
     volumes:
       - ../volumes/jellyfin/config:/config
