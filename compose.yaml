@@ -5,6 +5,7 @@ include:
   - services/radicale.yaml
   - services/zipline.yaml
   - services/radio.yaml
+  - services/gluetun.yaml
   - network/cloudflared.yaml
 
 secrets:
