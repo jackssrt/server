@@ -6,6 +6,7 @@ include:
   - services/zipline.yaml
   - services/radio.yaml
   - network/cloudflared.yaml
+  - network/gluetun.yaml
 
 secrets:
   cloudflared_token:
