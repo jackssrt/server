@@ -1,0 +1,6 @@
+services:
+  dynamiccalendar-rs:
+    build: ./../../dynamiccalendar-rs
+    restart: unless-stopped
+    ports:
+      - 8099:8000
