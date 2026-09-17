@@ -1,0 +1,19 @@
+services:
+  tailscale:
+      image: tailscale/tailscale:latest
+      container_name: tailscale
+      network_mode: "container:gluetun"  # Use Gluetun's network
+      cap_add:
+        - NET_ADMIN
+        - SYS_MODULE
+      devices:
+        - /dev/net/tun
+      volumes:
+        - ./../volumes/tailscale:/var/lib/tailscale
+        - /dev/net/tun:/dev/net/tun
+      environment:
+        - TS_EXTRA_ARGS=--advertise-exit-node
+      env_file: ./../.env
+      restart: unless-stopped
+      depends_on:
+        - gluetun

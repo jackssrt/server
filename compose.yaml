@@ -6,6 +6,7 @@ include:
   - services/zipline.yaml
   - services/radio.yaml
   - services/dynamiccalendar-rs.yaml
+  - network/tailscale-exit-node.yaml
   - network/cloudflared.yaml
   - network/gluetun.yaml
 
