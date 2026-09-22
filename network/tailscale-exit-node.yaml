@@ -13,6 +13,10 @@ services:
         - /dev/net/tun:/dev/net/tun
       environment:
         - TS_EXTRA_ARGS=--advertise-exit-node
+        - TS_HOSTNAME=vpn-exit-node
+        - TS_AUTH_ONCE=true
+        - TS_STATE_DIR=/var/lib/tailscale
+        - TS_USERSPACE=false
       env_file: ./../.env
       restart: unless-stopped
       depends_on:
