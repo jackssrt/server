@@ -10,6 +10,7 @@ include:
   - network/tailscale-exit-node.yaml
   - network/cloudflared.yaml
   - network/gluetun.yaml
+  - services/qbittorrent.yaml
 
 secrets:
   cloudflared_token:
