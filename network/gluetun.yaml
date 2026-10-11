@@ -9,6 +9,7 @@ services:
     devices:
       - /dev/net/tun:/dev/net/tun
     ports:
+      - 8686:8686 # lidarr
       - 9000:9000
     volumes:
       - ./../volumes/gluetun:/gluetun
