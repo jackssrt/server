@@ -19,7 +19,7 @@ services:
       - VPN_TYPE=wireguard
       # Wireguard:
       - WIREGUARD_ADDRESSES=10.64.222.21/32
-      - SERVER_COUNTRIES=Sweden
+      - SERVER_COUNTRIES=France
       # Server list updater
       # See https://github.com/qdm12/gluetun-wiki/blob/main/setup/servers.md#update-the-vpn-servers-list
       - UPDATER_PERIOD=
